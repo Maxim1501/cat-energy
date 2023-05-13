@@ -1,0 +1,41 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding: 26px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+    padding: 53px 110px 0px;
+  }
+}
+
+.page-header__logo {
+  @include statesHoverActive;
+
+  @media (min-width: $desktop-width) {
+   width: 202px;
+   height: 59px;
+  }
+}
+
+.page-header__logo-text {
+  @include statesHoverActive;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+
+

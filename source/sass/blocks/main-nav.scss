@@ -1,0 +1,134 @@
+.main-nav__toggle {
+  border: 0;
+  padding: 0;
+  background: $bg-white;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include text (18px, 24px);
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media (min-width: $mobile-width) {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 67px;
+    width: 100%;
+    background: $bg-white;
+    z-index: 2;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text (20px, 30px);
+    width: 478px;
+    background: none;
+  }
+}
+
+
+.site-list__item  {
+  @include statesHoverActive;
+
+  @media (min-width: $mobile-width) {
+    border-top: 1px solid #EBEBEB;
+    padding: 22px 0;
+    font-weight: 500;
+
+   &:first-child {
+    border-top: 2px solid #EBEBEB;
+   }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 8px;
+    border-top: 0;
+    
+    &:first-child {
+      border-top: 0;
+     }
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid #68B738;
+    }
+  }
+
+  &--active-white {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $bg-white;
+    }
+  }
+}
+
+.main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $bg-white;
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      color: $text-base;
+    }
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
+  height: 20.4px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    right: 19px;
+    width: 25px;
+    height: 1.5px;
+    background-color: #000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__burger {
+  display: none;
+}
+
+
+
+
+

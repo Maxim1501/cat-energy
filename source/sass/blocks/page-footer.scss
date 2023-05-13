@@ -1,0 +1,159 @@
+.page-footer {
+  background-color: $bg-silver;
+  padding: 0 20px 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px 58px;
+  }
+}
+
+.page-footer__logo {
+  @include statesHoverActive;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+
+  @media (min-width: $tablet-width) {
+   border: none;
+   padding: 0;
+  }
+}
+
+.social-item {
+  &:nth-child(2) {
+    margin-left: 37px;
+    margin-right: 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      margin-left: 28px;
+      margin-right: 29px;
+    }
+  }
+}
+
+.social-icon {
+  &:hover {
+    path {
+      fill: $color-green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $color-green;
+      opacity: 0.3;
+    }
+  }
+}
+
+.social-icon-fb {
+  &:last-child {
+    &:hover {
+      path {
+        stroke: $color-green;
+    }
+  }
+}
+
+  &:active {
+    path {
+      stroke: $color-green;
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      & path {
+        fill: $color-green;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+      & path {
+        fill: $color-green;
+        opacity: 0.3;
+      }
+    }
+
+   margin: 0;
+  }
+}
+
+.copyright__text {
+  @include text-mobile;
+  @include text (16px, 18px);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-right: 22px;
+    align-items: center;
+  }
+}
+
+.copyright__text {
+  @media (min-width: $mobile-width) {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__icon {
+  @media (min-width: $mobile-width) {
+    &:hover {
+      & path {
+        fill: $color-green;
+      }
+    }
+
+    &:active {
+      & path {
+        fill: $color-green;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+@mixin text-mobile {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-silver;
+}
+
+@mixin text ($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin statesHoverActive {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@mixin statesHoverActive-green {
+  &:hover {
+    opacity: 0.8;
+    color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+    color: $color-green;
+  }
+}
+

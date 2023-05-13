@@ -1,0 +1,215 @@
+.additional-catalog {
+  padding: 28px 18px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 86px;
+  }
+}
+
+.additional-catalog__title {
+  @include text (24px, 24px);
+  font-weight: 400;
+  margin-bottom: 35px;
+  position: relative;
+  margin-top: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: $color-green;
+    top: 50%;
+    margin-left: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include text (36px, 36px);
+    margin-bottom: 80px;
+    border: none;
+    padding-left: 36px;
+
+    &::after {
+      margin-left: 36px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background: $color-green;
+      right: 100%;
+      top: 50%;
+      margin-left: 36px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+  }
+}
+
+.additional-product__body {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.additional-product__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex: 1;
+  }
+}
+
+.additional-product__list {
+  border-bottom: 1px solid#CDCDCD;
+
+  &:first-child {
+    border-top: 1px solid#CDCDCD;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 26px 38px 28px;
+    border-left: 1px solid#CDCDCD;
+    border-right: 1px solid#CDCDCD;
+    border-bottom: 1px solid#CDCDCD;
+
+    &:first-child {
+      border-top: 1px solid#CDCDCD;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 284px;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 15px;
+  }
+}
+
+.additional-product__title {
+  @include text (16px, 16px);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 13px 0;
+
+  @media (min-width: $tablet-width) {
+    @include text (20px, 20px);
+    margin-bottom: 27px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.additional-product__composition-list {
+  @include text-mobile;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    @include text (16px, 20px);
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.additional-composition__item-text {
+  margin-right: 50px;
+}
+
+.additional-product__promo {
+  background-image: url(..//..//img/background-mobile-cat.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(..//..//img/background-tablet-cat.jpg);
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-left: 80px;
+    background-image: url(..//..//img/background-desktop-cat.png);
+  }
+}
+
+.additional-product__promo-icon {
+  margin: 58px auto 48px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 57px 0 60px 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 56px 81px 46px 84px;
+  }
+}
+
+.additional-product__promo-text {
+  @include text-mobile;
+  @include text (16px, 20px);
+  color: $bg-white;
+  text-align: center;
+  padding-bottom: 43px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 124px;
+    text-align: inherit;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 43px 42px 41px;
+    text-align: center;
+  }
+}
+
+.additional-product__button {
+  @include text (16px, 20px);
+  line-height: 40px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+    margin-bottom: 0;
+    width: 244px;
+  }
+}
